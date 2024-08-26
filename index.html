@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="/Imagenes/Logo.png" alt="logo de alura" >
+    </header> 
+    <main>
+       <section>
+        <textarea class="text-area" placeholder="Ingrese el texto aqui" cols="30" rows="10"></textarea>
+        <div class="aviso-informacion">
+            <img class="aviso" src="/Imagenes/aviso.jpg" alt="aviso" >
+            <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
+        </div>
+        <div class="botones">
+           <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+           <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button> 
+        </div>
+       </section>
+       <section class="contenedor-mensaje">
+        <textarea class="mensaje" id="resultado" cols="20" rows="10"></textarea>
+    
+           <div class="nota">
+            <h5 class="nota1"></h5>
+            <h6 class="nota2"></h6>
+           </div>
+     
+       
+            <button class="btn-copiar" id="copiar" onclick="btnCopiar()">Copiar</button>
+        
+       </section> 
+    </main>
+    <footer>
+        <p class="copyright">&copy; copyright 2024 - Encriptador de Texto - desarrollado por Jhon Luna</p>
+        <a href="#" rel="">
+            <img src="./imagenes/linkedin.svg" alt="Logo Linkedin" class="linked">
+        </a>
+        <a href="#" rel="">
+            <img src="./imagenes/github.svg" alt="Logo Github" class="git">
+        </a>
+    </footer>
+    <script src="/script.js"></script>   
+</body>
+</html>
